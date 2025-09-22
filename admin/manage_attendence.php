@@ -104,11 +104,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         .container {
             margin-top: 50px;
             background-color: #fff;
-            container / padding: 20px;
             border-radius: 10px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            / Box shadow for container / animation: fadeIn 0.5s ease;
-            / Fade-in animation */
         }
 
 

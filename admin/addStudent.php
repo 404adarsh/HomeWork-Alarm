@@ -75,7 +75,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             echo "<script>setTimeout(function() { window.location.href = '../admin/addStudent.php'; }, 2000);</script>";
 
         } else {
-            echo "Something Went Wrong " . $conn->error . mysqli_error();
+            echo "Something Went Wrong " . $conn->error . mysqli_error( $conn );
         }
 
         $insert_stmt->close();

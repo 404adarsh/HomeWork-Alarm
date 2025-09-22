@@ -1,7 +1,7 @@
 # HomeWork-Alarm 📚⏰
 
 HomeWork-Alarm is a complete school management platform where principals, teachers, students, and parents can stay connected.  
-The system allows easy management of homework, attendance, announcements, chat, payments (recording only), and more.
+The system allows easy management of homework, attendance, announcements, chat, payments (recording only), PDF reports (via TCPDF), and more.
 
 ---
 
@@ -12,6 +12,7 @@ The system allows easy management of homework, attendance, announcements, chat, 
 - **Attendance Tracking:** Teachers can mark daily attendance which students/parents can see.  
 - **Chat System:** Students and teachers can interact in a safe, structured chat environment.  
 - **Announcements:** Admins can share important messages and highlight updates.  
+- **PDF Generation:** Generate reports, homework, or invoices using **TCPDF**.  
 - **Games & Fun:** A playful module where students can play simple games.  
 - **Secure Login:** Different roles (Owner, Admin, Teacher, Student) with authentication.  
 
@@ -40,7 +41,8 @@ The platform uses MySQL for storing data with tables for:
    - Teachers send homework notifications.  
    - Attendance marked for each class.  
    - Fee records updated and shown on student dashboards.  
-4. **Parents & Students** – Parents and students can track homework, announcements, attendance, and fee status online.  
+   - PDF reports generated using TCPDF (homework, attendance, fee summary, etc.)  
+4. **Parents & Students** – Parents and students can track homework, announcements, attendance, fee status, and download PDFs.
 
 ---
 
@@ -49,6 +51,7 @@ The platform uses MySQL for storing data with tables for:
 - **Frontend:** HTML, CSS, JavaScript (Bootstrap used in pages)  
 - **Database:** MySQL / MariaDB  
 - **Mailing:** PHPMailer (via Composer)  
+- **PDF Generation:** TCPDF  
 - **Authentication:** Role-based login (Owner/Admin/Teacher/Student)  
 
 ---
@@ -69,9 +72,6 @@ The platform uses MySQL for storing data with tables for:
 
 ---
 
-
----
-
 ## ✉️ PHPMailer — How to get a Gmail App Password (for sending OTPs/emails)
 > Use App Passwords with Gmail + 2-Step Verification. Do **not** use your regular Gmail password in code. App Passwords are required for third-party apps (or use OAuth2).
 
@@ -79,13 +79,11 @@ The platform uses MySQL for storing data with tables for:
 1. Sign in to the Google account you will send emails from (e.g., `your.email@gmail.com`).  
 2. Go to **Google Account → Security**.  
 3. Under **"Signing in to Google"**, enable **2-Step Verification** (if not already enabled). Follow the prompts and complete setup.  
-4. After 2-Step Verification is enabled, return to **Security** → **"Signing in to Google"** → click **App passwords**.  
-5. In the App passwords page:
-   - Select **Mail** as the app.
-   - Choose a device (or select **Other (Custom name)** and enter `HomeWork-Alarm`), then click **Generate**.  
-6. Google shows a 16-character app password. **Copy it now** — this is the value you will use in PHPMailer as the SMTP password.
+4. After 2-Step Verification is enabled, return to **Security → App passwords**.  
+5. Select **Mail** as the app and choose a device (or select **Other (Custom name)** and enter `HomeWork-Alarm`). Click **Generate**.  
+6. Copy the 16-character app password — this is used in PHPMailer as the SMTP password.
 
-**How to use the App Password in PHPMailer (example):**
+**Example usage in PHPMailer:**
 ```php
 $mail->isSMTP();
 $mail->Host       = 'smtp.gmail.com';
@@ -97,3 +95,5 @@ $mail->Port       = 587;
 
 $mail->setFrom('your.email@gmail.com', 'HomeWorkAlarm');
 $mail->addAddress($userEmail);
+
+
