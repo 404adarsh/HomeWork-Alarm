@@ -1,0 +1,42 @@
+/* enroll.css */
+
+/* Add your CSS rules here */
+.enroll-form {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.enroll-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.enroll-form input[type="text"],
+.enroll-form input[type="mobile"],
+.enroll-form select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.enroll-form input[type="submit"] {
+    background-color: rgb(255, 20, 157);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.enroll-form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.text-center {
+    text-align: center;
+}

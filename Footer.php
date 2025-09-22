@@ -1,0 +1,3 @@
+<footer>
+        Agarwal Coaching Centre &copy; 2024. All rights reserved.
+    </footer> 

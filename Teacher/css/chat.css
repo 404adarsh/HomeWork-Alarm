@@ -1,0 +1,165 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+#chat-container {
+  width: 100%;
+  height: 90vh;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+}
+
+#chat-header {
+  background-color: #075e54;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+#chat-messages {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.message {
+  max-width: 70%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.sent-message {
+  background-color: #dcf8c6;
+  align-self: flex-end;
+}
+#sent-message-container {
+  width: 100%;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.received-message {
+  background-color: #fff;
+  align-self: flex-start;
+}
+
+#chat-input {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #fff;
+}
+
+#message-input {
+  flex-grow: 1;
+  padding: 10%;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+#send-button {
+  background-color: #075e54;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+
+/* Php Showing */
+
+.message-php{
+  /* background-color: red; */
+}
+.text-big{
+  font-weight: 700;
+  font-size: 20px;
+}
+.message-php {
+  max-width: 97%;
+  width: auto;
+  margin-bottom: 5rem;
+  /* margin-bottom: 10px; */
+  position: relative;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.message-php .message-content {
+  background-color: #DCF8C6;
+  word-wrap: break-word;
+}
+
+.message-php .message-info {
+  width: 298px;
+  height: 80px;
+  margin-top: 5px;
+  font-size: 12px;
+  color: #777;
+  position: absolute;
+  bottom: -25px;
+  right: 10px;
+  display: none;
+  background-color: #fff;
+  padding: 20px 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.message-php:hover .message-info {
+  display: block;
+}
+
+.message-php.me .message-content {
+  float: right;
+  background-color: #DCF8C6;
+  padding: 17px 45px 25px 33px;
+}
+
+.message-php.me .message-info {
+  left: auto;
+  right: 10px;
+}
+
+.message-php.other .message-content {
+  float: left;
+  background-color: #EDEDED;
+}
+
+.message-php.other .message-info {
+  right: auto;
+  left: 10px;
+}
+
+.delete-button {
+  color: red;
+  border: none;
+  background: #ffffff;
+  cursor: pointer;
+  position: absolute;
+  margin-top: 1rem;
+  top: 5px;
+  right: 40px;
+  font-size: 16px; /* Increase font size */
+  font-family: 'Arial', sans-serif; /* Apply custom font family */
+  padding: 5px 10px; /* Add padding */
+  border-radius: 5px; /* Add border radius */
+  border: 1px solid #ccc; /* Add border */
+  transition: background 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+.delete-button:hover {
+  background: #ffcccc; /* Change background color on hover */
+}

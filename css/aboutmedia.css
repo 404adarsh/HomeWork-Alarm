@@ -1,0 +1,25 @@
+@media only screen and (max-width: 880px) {
+    .kid-about {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+.founder-image{
+    flex-direction: column;
+}
+
+.founder-image img{
+    width: 70%;
+    margin: auto;
+}
+.content{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.leftside{
+    width: 100%;
+}
+}

@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.sub-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+.boxsub{
+    height: 90vh;
+    width: 50%;
+    background-color: #fff;
+    margin: 20px 20px;
+    box-sizing: border-box;
+    box-shadow: 4px 5px 6px 6px #ccc;
+    border-radius: 8px;
+    overflow: scroll;
+}
+.topdivider{
+    height: 5rem;
+    border-radius: 8px;
+    background-color: rgb(17, 168, 255);
+}
+.topdivider h2{
+    padding-top: 1rem;
+    margin-left: 1rem;
+    color: white;    
+}
+
+.boxsub p{
+    padding-left: 1rem;
+    padding-top: 1rem;
+    font-size: 18px;
+    font-family: "Noto Sans", sans-serif;
+    /* text-decoration: underline; */
+}
+.icon-notification {
+    color: orange;
+    padding-right: 5px;
+}
+.icon-location {
+    color: blue;
+    padding-right: 5px;
+}
+
+
+@media only screen and (max-width: 865px){
+    .topdivider{
+        /* position: sticky; */
+        top: 0;
+    }
+
+.sub-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    flex-direction: column;
+}
+
+}

@@ -1,0 +1,142 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    background-color: rgb(61 157 218);
+    height: 4rem;
+    position: sticky;
+    top: 0;
+}
+.nav-list{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+}
+.nav-list li{
+    padding: 20px 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+}
+.burger{
+    cursor: pointer;
+    /* display: none; */
+    position: absolute;
+    top: 15px;
+    right: 5%;
+}
+.line{
+    width: 33px;
+    height: 5px;
+    background-color: white;
+    margin: 3px 3px;
+}
+
+    .burger{
+        display: block;
+        cursor: pointer;
+    }
+    
+    .nav-list{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+    }
+    .nav-list li{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        font-weight: 900;
+        font-size: 25px;
+    }
+    .h-nav-resp{
+        height: 100vh;
+    }
+    .v-class-resp{
+        display: none;
+    }
+
+
+.top-container{
+    height: 90vh;
+    background-color: rgba(2, 255, 221, 0.459);
+}
+
+
+.container{
+    
+}
+.nameGreet{
+    align-items: center;
+    /* position: absolute; */
+    top: 40%;
+    left: 15%;
+}
+
+.pass-Field{
+    /* position: absolute; */
+    top: 50%;
+    left: 40%;
+}
+
+.pass-Field input{
+    padding: 0px 100px 10px 100px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.announcement-container {
+    margin-top: 20px;
+}
+
+.announcement {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.announcement h2 {
+    color: #333;
+    margin-top: 0;
+}
+
+.announcement p {
+    color: #666;
+}
+
+.timestamp {
+    color: #888;
+    font-size: 12px;
+}
+

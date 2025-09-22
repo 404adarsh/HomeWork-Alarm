@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+.attributes-set{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    height: 20rem;
+
+}
+
+.heading-box{
+    font-weight: 600;
+    font-size: 34px;
+    font-family: "Madimi One", sans-serif;
+}
+
+.box-item{
+    /* background-color: red; */
+    height: 200px;
+    width: 200px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 3rem;
+    border-radius: 40px;
+    box-sizing: border-box;
+    box-shadow: 9px 10px 8px 8px #757575;
+}
+.box-item-1{
+    background-image: url('../img/Computer\ Class.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box-item-2{
+    background-image: url('../img/waterfacility.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box-item-3{
+    background-image: url('../img/coachingfacility.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box-item-4{
+    background-image: url('../img/websitefacility.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box-item-5{
+    background-image: url('../img/acfacilities.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.box-text-media{
+    display: none;
+}
+
+
+@media only screen and (max-width: 865px){
+    .box-set{
+        flex-direction: column;
+        height: 130rem;
+    }
+     .box-item{
+        width: 252px;
+        height: 34rem;
+    }
+    .box-text-media{
+        display: block;
+    }
+    .box-item-5{
+        width: 275px;
+    }
+    /*
+    .box-item-1{
+        left: 4%;
+    }
+    .box-item-2{
+        right: 4%;
+        top: ;
+    } */
+}
