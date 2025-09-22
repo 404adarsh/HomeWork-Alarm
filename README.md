@@ -69,8 +69,6 @@ The platform uses MySQL for storing data with tables for:
 
 ---
 
-## 📷 Demo
-*(Add screenshots or demo video link here)*
 
 ---
 
